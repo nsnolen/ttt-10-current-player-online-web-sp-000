@@ -1,8 +1,6 @@
 # create a method for number of turns that have been played
-def turn_count
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  board.each do |borad|
-  cells.count{|board| board=="X" || board=="O"}
+def turn_count(board)
+9 - board.count(" ")
 end
 
 
@@ -10,3 +8,7 @@ end
 def current_player(board)
 
 end
+
+
+
+  
