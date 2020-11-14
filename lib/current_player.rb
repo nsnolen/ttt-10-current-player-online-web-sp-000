@@ -1,6 +1,8 @@
 # create a method for number of turns that have been played
 def turn_count
-  cells.count{|char| char=="X" || char=="O"}
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  board.each do |borad|
+  cells.count{|board| board=="X" || board=="O"}
 end
 
 
